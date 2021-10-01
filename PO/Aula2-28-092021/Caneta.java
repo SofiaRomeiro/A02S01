@@ -51,14 +51,15 @@ public class Caneta {
 	// cada atributo é PRIVADO para cada objeto
 
 	public Caneta(int q, String m, boolean b) {		//metodo de inicializacao dos atributos do objeto, construtor (obriga a ser usado)
-		this(q, m , true); 							//permite fazer poupança de codigo, mesma função que as linhas abaixo {37, 42}
-		/*
 		quantidade = q;
 		marca = m;
 		tapada = b;
 		numeroCanetas++;
-		*/
 	}
+
+	public Caneta(int q, String m) {				//permite fazer poupança de codigo, mesma função que as linhas acima, apenas com argumentos diferentes
+}		
+		this(q, m , true); 					
 
 	public static void main(String[] args) {	//String[] <=> char **
 		Caneta c1 = new Caneta(70, "Marca 2", false);
