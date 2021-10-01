@@ -36,6 +36,16 @@ public class Caneta {
 		System.out.println(str);
 	}
 
+	public boolean equals(Caneta c) {
+		return quantidade == c.quantidade && marca.equals(c.marca) && tapada == c.tapada;		
+	}
+
+	public Caneta canetaComMaiorQuantidade(Caneta c) { //a caneta c vai ser comparada com a quantidade de tinta sobre a qual o método foi invocado
+		if (c.quantidade > quantidade)
+			return c;
+		return this;
+	} 
+
 	// {public Caneta} o Construtor não devolve nada, mas não é void. Ao colocar void, deixa de ser construtor (metodo especial das classes)
 	// Java adiciona construtor por omissao (que inicializa tudo com os valores default) quando o programador nao declara um construtor
 	// cada atributo é PRIVADO para cada objeto
