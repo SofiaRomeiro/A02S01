@@ -63,7 +63,7 @@ public class Caneta {
 	public static void main(String[] args) {	//String[] <=> char **
 		Caneta c1 = new Caneta(70, "Marca 2", false);
 		Caneta c2 = new Caneta(80, "Marca 1", true);
-		Caneta c3 = new Caneta(70, "Marca 50", true)
+		Caneta c3 = new Caneta(70, "Marca 50", true);
 
 		c2._quantidade = 80;
 		
