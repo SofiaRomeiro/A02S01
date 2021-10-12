@@ -1,0 +1,14 @@
+EM C:
+
+int[] a = (int *)malloc(sizeof(int)*50)
+
+a[-1] = 5;		// é válido
+a[51] = null;	// é valido
+
+// Se fizer a = a++ é equivalente a dizer que "a" passa a apontar para a posição 1 ao invés da posição 0
+
+EM JAVA:
+
+int[] a = new int[50];
+a[-1] = 5;		// nao é permitido
+a[50] = null;	// nao é permitido
