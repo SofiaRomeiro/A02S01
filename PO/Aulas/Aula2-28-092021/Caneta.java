@@ -67,6 +67,22 @@ public class Caneta {
 		Caneta c3 = new Caneta(70, "Marca 50", true);
 
 		c2._quantidade = 80;
+
+		String strObj2 = new String("abc"); //	ambas estas formas sao equivalentes, 
+											//	na segunda é criada uma instancia e atribuido o valor "abc", automaticamente
+		String strObj1 = "abc";
+
+		int[] array = new int[40];
+
+		int total = 0; //a inicialização de uma variavel local é obrigatoria, ao contrário de em C
+		for (int i=0; i < array.length; i++)
+			total += array[i];
+
+		// outro tipo de for : for-each
+
+		for (int elemento : array) { 	// por cada elemento presente no array
+			total += element;
+		}
 		
 		//c1.init(70, "Marca 2", false);	//inicializacao correta, no caso da criacao do metodo init()
 
