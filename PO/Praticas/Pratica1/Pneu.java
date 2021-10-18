@@ -7,13 +7,13 @@
 
 	2- O que acontece no construtor para que seja feito desta forma? Qual o 
    processo por trás?
- */
+*/
 
 
 public class Pneu {
 
 	private int _airPressure;
-	private static int _recommendedAirPressure;
+	private int _recommendedAirPressure;
 	private boolean _flatTier;
 
 
@@ -29,9 +29,9 @@ public class Pneu {
 		return _airPressure < (0.8*_recommendedAirPressure);
 	}
 
-	public void changeAirPressure(int airPressure) {
+	public void changeAirPressure(int newPressure) {
 
-		if (airPressure > (1.5*_recommendedAirPressure)) {
+		if (newPressure > (1.5*_recommendedAirPressure)) {
 			_flatTier = true;
 			_airPressure = 0;
 		}
@@ -41,7 +41,7 @@ public class Pneu {
 		}
 
 		else {
-			_airPressure = airPressure;
+			_airPressure = newPressure;
 		}
 
 	}
