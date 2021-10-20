@@ -63,7 +63,8 @@ public class Company {
     return res;
   }
  
-  public void removeEmpoyeesWithName(String startingName) {
+  public void removeEmployeesWithName(String startingName) {
+    
     Iterator<Employee> iter = _employees.iterator();
 
     while (iter.hasNext())
